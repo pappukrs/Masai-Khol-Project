@@ -7,4 +7,5 @@
 - [NASEEB KHAN](https://github.com/naseeb-shah/)
 - [PRATEEK](https://github.com/Pratikm05)
 - [VISHAL GUPTA](https://github.com/)
+- [PRINCE KUMAR](https://github.com/)
 
