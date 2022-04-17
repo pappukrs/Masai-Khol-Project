@@ -126,6 +126,176 @@ body{
 .color-selector-grid-textflex{
  display:flex;
 }
+
+/* different color item have different ids started */
+#imgId1{
+    background-image:url();
+}
+#imgId2{
+    background-image:url(https://media.kohlsimg.com/is/image/kohls/5485729_Purple_Dot_Stripe_sw?wid=30&hei=30&op_sharpen=1);
+}
+#imgId3{
+    background-image:url();
+}
+#imgId4{
+    background-image:url();
+}
+#imgId5{
+    background-image:url();
+}
+#imgId6{
+    background-image:url();
+}
+#imgId7{
+    background-image:url();
+}
+#imgId8{
+    background-image:url();
+}
+#imgId9{
+    background-image:url();
+}
+#imgId10{
+    background-image:url();
+}
+#imgId11{
+    background-image:url();
+}
+#imgId12{
+    background-image:url();
+}
+#imgId13{
+    background-image:url();
+}
+#imgId14{
+    background-image:url();
+}
+#imgId15{
+    background-image:url();
+}
+#imgId16{
+    background-image:url();
+}
+#imgId17{
+    background-image:url();
+}
+#imgId18{
+    background-image:url();
+}
+#imgId19{
+    background-image:url();
+}
+#imgId20{
+    background-image:url();
+}
+#imgId21{
+    background-image:url();
+}
+#imgId22{
+    background-image:url();
+}
+#imgId23{
+    background-image:url();
+}
+#imgId24{
+    background-image:url();
+}
+#imgId25{
+    background-image:url();
+}
+#imgId26{
+    background-image:url();
+}
+#imgId27{
+    background-image:url();
+}
+#imgId28{
+    background-image:url();
+}
+#imgId29{
+    background-image:url();
+}
+#imgId30{
+    background-image:url();
+}
+#imgId31{
+    background-image:url();
+}
+#imgId32{
+    background-image:url();
+}
+#imgId33{
+    background-image:url();
+}
+#imgId34{
+    background-image:url();
+}
+#imgId35{
+    background-image:url();
+}
+#imgId36{
+    background-image:url();
+}
+#imgId37{
+    background-image:url();
+}
+#imgId38{
+    background-image:url();
+}
+#imgId39{
+    background-image:url();
+}
+#imgId40{
+    background-image:url();
+}
+#imgId41{
+    background-image:url();
+}
+#imgId42{
+    background-image:url();
+}
+#imgId43{
+    background-image:url();
+}
+#imgId44{
+    background-image:url();
+}
+#imgId45{
+    background-image:url();
+}
+#imgId46{
+    background-image:url();
+}
+#imgId47{
+    background-image:url();
+}
+#imgId48{
+    background-image:url();
+}
+#imgId49{
+    background-image:url();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* quantity add remove css started */
 .Quantity-flex{
     display:flex;
