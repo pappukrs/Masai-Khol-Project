@@ -5,11 +5,6 @@
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 
-header {
-    /* position: relative; */
-}
-
-
 #header_1 {
     width: 100%;
     display: flex;
@@ -81,10 +76,7 @@ header {
     outline: none;
 }
 
-#user {
-    /*  */
 
-}
 
 #user>div {
     border: 2px solid black;
