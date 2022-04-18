@@ -6,7 +6,11 @@ var user_drop_down = document.querySelector('#user_drop_down')
 var user_drop_down2 = document.querySelector('#user_drop_down2')
 var user = document.querySelector('#user')
 
+<<<<<<< HEAD
 var user_flag = false
+=======
+var user_flag = true
+>>>>>>> main
 
 user.addEventListener('click',() => {
     if(user_flag == false){

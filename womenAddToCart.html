@@ -5,25 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Women's Sonoma Goods For Life® Everyday V-Neck Tee</title>
+    <!-- header css link -->
+    <link rel="stylesheet" href="./css/header.css"/>
     <link rel="stylesheet" href="./css/womenAddToCart.css">
     <link rel="stylesheet" href="./components/footer/footer.css"/>
     <script src="https://kit.fontawesome.com/590dcdf519.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    <!-- header navbar started -->
+    <div id="header_1">
+        <span style="color:#da2128;font-size: 14px; cursor: pointer;"><b style="font-size: 16px;">HOORAY</b>—Everyone
+            gets <b style="font-size: 16px;">FREE SHIPPING</b>!
+            <span style="font-size: 10px;text-decoration: underline;">details </span> </span>
+        <!-- Fast & free store pickup! details -->
+        <span style="font-size: 14px;cursor: pointer;"><b style="font-size: 16px;">&NonBreakingSpace; Fast & free
+            </b>store pickup! <span style="font-size: 10px;text-decoration: underline;">details</span> </span>
+        <!-- Take an extra 30%, 20% or 15% off when you use a Kohl's Card. details -->
+        <span style="font-size: 14px;cursor: pointer;"><b style="font-size: 16px;">&NonBreakingSpace; Take an extra
+            </b>30%, 20% or 15% off when you use a Kohl's Card. <span
+                style="font-size: 10px;text-decoration: underline;">details</span> </span>
+    </div>
+
+    <nav id="navbar">
+        <div>
+            <div id="logo">
+                <img src="./image/kohls_logo.jpg" alt="">
+            </div>
+            <div id="search_area">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="search" placeholder="What are you looking for today?">
+            </div>
+        </div>
+        <div>
+            <div id="user">
+                <div>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <span>Account</span>
+            </div>
+            <div id="cart">
+                <div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div>0</div>
+                </div>
+                <span>$0.00</span>
+            </div>
+            <div id="checkout">
+                <div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <span>Checkout</span>
+            </div>
+        </div>
+    </nav>
+
+    <div id="header_2">
+        <div>
+            <div id="short">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <span>Shop by Category</span><span style="font-size: x-large;color: #ccc;margin-left: 50px;">⏐</span>
+            <div id="store">
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <span>My Store: Select Store </span>
+        </div>
+        <div>
+            <!-- <div> -->
+            <div id="coupon">Kohl's Coupons</div>
+            <!-- </div> -->
+            <div id="help"> Help</div>
+        </div>
+    </div>
+    <!-- </header> -->
+    <!-- header navbar ended -->
     <div id="fullContent-container">
         <div class="top-bar-link">
-          <div><a href="#">Back</a></div>
-          <div><a href="#">Womens</a></div>
-          <div><a href="#">Clothing</a></div>
-          <div><a href="#">Tops</a></div>
-          <div><a href="#">Tops & Tees</a></div>
-          <div><a href="#">Sonoma Goods For Life</a></div>
+          <div><a href="./womenProduct.html">Back</a></div>
+          <div><a href="./womenProduct.html" target="_blank">Womens</a></div>
+          <div><a href="./index.html" target="_blank">Clothing</a></div>
+          <div><a href="./index.html" target="_blank">Tops</a></div>
+          <div><a href="./index.html" target="_blank">Tops & Tees</a></div>
+          <div><a href="./womenAddToCart.html">Sonoma Goods For Life</a></div>
        </div>
     <div id="container">
           <div id="left-contaiiner">
               <div class="flex-text3">
                    <div class="item1"><h1>Women's Sonoma Goods For Life® Everyday V-Neck Tee</h1></div>
-                   <div class="item2">by<a href="#">Sonoma Goods For Life</a></div>
+                   <div class="item2">by <a href="#">Sonoma Goods For Life</a></div>
                    <div class="item3">
                        <div>
                         <i class="fa-solid fa-star"></i>
@@ -47,23 +119,26 @@
                   <div id="#single-imgdiv" ><img id="single-img" src="./Image/5485729_Retro_Floral (2).webp"/></div>
               </div>
           </div>
-          <div id="right-container">77eude
+
+          <!-- right container started -->
+          <div id="right-container">
                 <div class="price-cut-flex">
-                      <div class="price-cut-flex-item">01
+                      <div class="price-cut-flex-item">
                         <div>$6.99 Sale</div>
                         <div>$13.00 Reg</div>
                       </div>
-                      <div class="price-cut-flex-item">02
+                      <div class="price-cut-flex-item">
                             <div>$5.94</div>
                             <div>when you use</div>
                       </div>
-                      <div class="price-cut-flex-item">03
+                      <div class="price-cut-flex-item">
                           <div>YOUR15(15% OFF)</div>
                           <div>at checkout</div>
                       </div>
                    </div>
+                   <div id="colorDECIDER">color:pink</div>
                    <hr>
-
+                 
                    <div class="color-selector-grid">
                        <!-- <div class="color-selector-grid-textflex">
                        <div>Color:</div>
@@ -126,8 +201,8 @@
                    </div>
 
                    <!-- select size started -->
-                   <label for="select">
-                       <h2>SIZE</h2>
+                   
+                       <h2 class="size20">SIZE</h2>
                        <select id="select">
                            <option value="none">Please Choose a size</option>
                            <option value="SMALL">SMALL</option>
@@ -136,20 +211,18 @@
                            <option value="LARGE">LARGE</option>
                            <option value="X LARGE">X LARGE</option>
                            <option value="XX LARGE">XX LARGE</option>
-                           <option value="XXS TALL">XXS TALL OUT OF STOCK</option>
-                           <option value="XS TALL OUT OF STOCK">XS TALL OUT OF STOCK</option>
-                           <option value="S TALL OUT OF STOCK">S TALL OUT OF STOCK</option>
-                           <option value="M TALL OUT OF STOCK">L TALL OUT OF STOCK</option>
-                           <option value="L TALL OUT OF STOCK">L TALL OUT OF STOCK</option>
+                           <option value="XXS TALL">XXS TALL </option>
+                           <option value="XS TALL OUT OF STOCK">XS TALL </option>
+                           <option value="S TALL OUT OF STOCK">S TALL </option>
+                           <option value="M TALL OUT OF STOCK">L TALL </option>
+                           <option value="L TALL OUT OF STOCK">L TALL </option>
                            <option value="LARGE">LARGE</option>
-                           <option value="LARGE">LARGE</option>
-                           <option value="LARGE">LARGE</option>
-                           <option value="LARGE">LARGE</option>
+                           
                        </select>
-                    </label>
+                    
 
                     <!-- INCREMENT DECREMENT QUANTITY -->
-                    <div>
+                    <div id="incDec">
                         <p>QUANTITY</p>
                         <div class="Quantity-flex">
                             <button id="decrement">-</button>
@@ -160,7 +233,8 @@
 
                     <!-- ADD TO CART BUTTON -->
 
-                    <button class="addToCart-btn" type="button"><div><i class="fa-solid fa-cart-shopping"></i></div><div>ADD TO CART</div></button>
+                    <button onclick="addedInCART()" class="addToCart-btn" type="button">ADD TO CART</button>
+                    <!-- <div><i class="fa-solid fa-cart-shopping"></i></div><div></div> -->
 
 
           </div>
