@@ -127,9 +127,12 @@
      background-color: rgba(32, 128, 51, 0.314);
      color: white;
      font: 600;
+     cursor:pinter;
+
  }
  #submit:hover{
      background-color: rgb(32,128,51);
+     cursor:pointer;
  }
  #cancal{
      padding-left: 20px;
@@ -137,6 +140,7 @@
      font-size: 20px;
      background-color: white;
    text-decoration: underline;
+   cursor: pointer;
  
  }
  .button{
