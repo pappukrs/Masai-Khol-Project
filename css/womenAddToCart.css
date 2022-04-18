@@ -9,18 +9,27 @@ body{
     background-color:white;
 
 }
+a{
+    text-decoration:none;
+}
 #fullContent-container{
- margin-left:1%;
- margin-right:1%;
- margin-top: 1%;
+ margin-left:4%;
+ margin-right:4%;
+ margin-top: 0%;
  border: 2px solid black;
  /* overflow-x: hidden; */
+ padding:1%;
 }
 .top-bar-link{
     display:flex;
     justify-content:space-evenly;
-    border:5px solid red;
+    /* border:5px solid red; */
     margin-right:50%;
+    /* margin-left:1%; */
+    margin-top:0%;
+    padding-top:1%;
+    padding-bottom:1%;
+    margin-left:0%;
 }
 .top-bar-link>div>a{
     text-decoration:underline;
@@ -36,38 +45,59 @@ body{
     margin-left:0%;
     margin-right:0%;
     margin-top: 0%;
-    border:2px solid red;
+    border:1px solid red;
     /* gap:10%; */
 
 }
 #left-contaiiner{
  width:65%;
  height:auto;
- border:2px solid black;
+ border:1px solid black;
  margin-right:1%;
 }
 .flex-text3{
     display:flex;
     flex-direction:column;
+    margin-bottom:15px;
+    
+}
+.flex-text3>div{
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:1px;
+}
+.flex-text3>.item1>h1{
+    font-size:27px;
+}
+.flex-text3>.item2>a{
+    color:black;
+    text-decoration:underline;
 }
 .item3{
     display:flex;
     justify-content: space-between;
     margin-right:40%;
-    background-color:pink;
-    border:2px solid red;
+    /* background-color:pink;
+    border:0px solid red; */
+    padding-top:3px;
+    padding-bottom:3px;
+}
+.item3 a{
+    color:black;
 }
 
 
 .flex-image-display{
     display:flex;
     flex-direction:row;
+
 }
 .grid-image-display{
     display:grid;
     grid-template-columns: repeat(1,1fr);
     width:30%;
     height:auto;
+    padding-right:15px;
 }
 .grid-image-display>div>img{
     width:90%;
@@ -88,34 +118,55 @@ body{
     width:80%;
     height:auto;
     overflow:hidden;
+    padding-left:80px;
 }
 #single-img{
     width:100%;
     height:80%;
+    padding-left:50px;
 }
+
 #right-container{
     width:35%;
     height:auto;
-    margin-right:10%;
-    border:2px solid teal;
+    margin-right:3%;
+    margin-left:5%;
+    padding-left:10px;
+    padding-right:15px;
+    padding-top:10px;
+    padding-bottom:10px;
+    border:1px solid teal;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .price-cut-flex{
     display:flex;
     flex-direction: column;
+    width:100%;
+    height:20%;
 }
 .price-cut-flex-item{
     display:flex;
     flex-direction: row;
     border:1px solid red;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-top:2px;
+    margin-bottom:3px;
+}
+.price-cut-flex-item>div{
+    font-size:20px;
+    font-weight:bold;
 }
 
 .color-selector-grid{
     display:grid;
     grid-template-columns: repeat(9,1fr);
+    width:100%;
+    height:50%;
+
    gap:1%;
    border:1px solid red;
-   border-radius:50%;
+   border-radius:30%;
 
 }
 .color-selector-grid>div{
@@ -129,155 +180,234 @@ body{
 
 /* different color item have different ids started */
 #imgId1{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_Black_Sun_Trees_sw?wid=30&hei=30&op_sharpen=1
+    );
+    cursor:pointer;
 }
 #imgId2{
     background-image:url(https://media.kohlsimg.com/is/image/kohls/5485729_Purple_Dot_Stripe_sw?wid=30&hei=30&op_sharpen=1);
+    cursor:pointer;
 }
 #imgId3{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_Mauve_sw?wid=30&hei=30&op_sharpen=1);
+    cursor:pointer;
 }
 #imgId4{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_Pink_Geo_Flower_sw?wid=30&hei=30&op_sharpen=1);
+    cursor:pointer;
 }
 #imgId5{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_Coral_Heart_sw?wid=30&hei=30&op_sharpen=1
+    );
+    cursor:pointer;
 }
 #imgId6{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_Mauve_sw?wid=30&hei=30&op_sharpen=1);
+    cursor:pointer;
 }
 #imgId7{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_Mauve_sw?wid=30&hei=30&op_sharpen=1);
+    cursor:pointer;
 }
 #imgId8{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_Retro_Floral_sw?wid=30&hei=30&op_sharpen=1);
+    cursor:pointer;
 }
 #imgId9{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_Olive_Floral_sw?wid=30&hei=30&op_sharpen=1
+    );
+    cursor:pointer;
 }
 #imgId10{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_Light_Purple_Stripe_sw?wid=30&hei=30&op_sharpen=1
+    );
+    cursor:pointer;
 }
 #imgId11{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_White_Stripe_sw?wid=30&hei=30&op_sharpen=1);
+    cursor:pointer;
 }
 #imgId12{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_Purple_Spaced_Floral_sw?wid=30&hei=30&op_sharpen=1
+    );
+    cursor:pointer;
 }
 #imgId13{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_Blue_Tie_Dye_sw?wid=30&hei=30&op_sharpen=1);
+    cursor:pointer;
 }
 #imgId14{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_Burgandy_Rust_Floral_sw?wid=30&hei=30&op_sharpen=1
+    );
+    cursor:pointer;
 }
 #imgId15{
-    background-image:url();
+    background-image:url(https://media.kohlsimg.com/is/image/kohls/5485729_…rk_Gray_Mini_Floral_sw?wid=30&hei=30&op_sharpen=1
+    );
+    cursor:pointer;
 }
 #imgId16{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_Lime_Rugby_Stripe_sw?wid=30&hei=30&op_sharpen=1
+    );
+    cursor:pointer;
 }
 #imgId17{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_Yellow_Green_Sun_sw?wid=30&hei=30&op_sharpen=1);
+    cursor:pointer;
 }
 #imgId18{
-    background-image:url();
+    background-image:url(https://media.kohlsimg.com/is/image/kohls/5485729_Khaki_Cactus_sw?wid=30&hei=30&op_sharpen=1);
+    cursor:pointer;
 }
 #imgId19{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_Orange_Brown_Floral_sw?wid=30&hei=30&op_sharpen=1
+    );
+    cursor:pointer;
 }
 #imgId20{
-    background-image:url();
+    background-image:url(https://media.kohlsimg.com/is/image/kohls/5485729_Bleach_Blue_Tie_Dye_sw?wid=30&hei=30&op_sharpen=1);
+    cursor:pointer;
 }
 #imgId21{
-    background-image:url();
+    background-image:url(https://media.kohlsimg.com/is/image/kohls/5485729_Bleach_Blue_Tie_Dye_sw?wid=30&hei=30&op_sharpen=1);
+    cursor:pointer;
 }
 #imgId22{
-    background-image:url();
+    background-image:url(https://media.kohlsimg.com/is/image/kohls/5485729_Indigo_sw?wid=30&hei=30&op_sharpen=1);
+    cursor:pointer;
 }
 #imgId23{
-    background-image:url();
+    background-image:url(https://media.kohlsimg.com/is/image/kohls/5485729_Burgandy_Rust_sw?wid=30&hei=30&op_sharpen=1);
+    cursor:pointer;
 }
 #imgId24{
-    background-image:url();
+    background-image:url(https://media.kohlsimg.com/is/image/kohls/5485729_Dark_Raspberry_sw?wid=30&hei=30&op_sharpen=1);
+    cursor:pointer;
 }
 #imgId25{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_Light_Pink_Purple_sw?wid=30&hei=30&op_sharpen=1
+    );
+    cursor:pointer;
 }
 #imgId26{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_Gray_Blue_sw?wid=30&hei=30&op_sharpen=1
+    );
+    cursor:pointer;
 }
 #imgId27{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_Light_Blue_sw?wid=30&hei=30&op_sharpen=1);
+    cursor:pointer;
 }
 #imgId28{
-    background-image:url();
+    background-image:url(https://media.kohlsimg.com/is/image/kohls/5485729_Red_sw?wid=30&hei=30&op_sharpen=1);
+    cursor:pointer;
 }
 #imgId29{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_Mauve_sw?wid=30&hei=30&op_sharpen=1);
+    cursor:pointer;
 }
 #imgId30{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_Light_Purple_sw?wid=30&hei=30&op_sharpen=1
+    );
+    cursor:pointer;
 }
 #imgId31{
-    background-image:url();
+    background-image:url(https://media.kohlsimg.com/is/image/kohls/5485729_Tan_Patchwork_sw?wid=30&hei=30&op_sharpen=1);
+    cursor:pointer;
 }
 #imgId32{
-    background-image:url();
+    background-image:url(https://media.kohlsimg.com/is/image/kohls/5485729_Ornate_Olive_Floral_sw?wid=30&hei=30&op_sharpen=1
+    );
+    cursor:pointer;
 }
 #imgId33{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_…on_Yellow_Circle_Dy_sw?wid=30&hei=30&op_sharpen=1
+    );
+    cursor:pointer;
 }
 #imgId34{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_Green_Gold_sw?wid=30&hei=30&op_sharpen=1
+    );
+    cursor:pointer;
 }
 #imgId35{
-    background-image:url();
+    background-image:url(https://media.kohlsimg.com/is/image/kohls/5485729_Gold_sw?wid=30&hei=30&op_sharpen=1);
+    cursor:pointer;
 }
 #imgId36{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_Green_Gold_sw?wid=30&hei=30&op_sharpen=1
+    );
+    cursor:pointer;
 }
 #imgId37{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_…on_Yellow_Circle_Dy_sw?wid=30&hei=30&op_sharpen=1
+    );
+    cursor:pointer;
 }
 #imgId38{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_…ive_Teal_Palm_Trees_sw?wid=30&hei=30&op_sharpen=1
+    );
+    cursor:pointer;
 }
 #imgId39{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_Black_sw?wid=30&hei=30&op_sharpen=1);
+    cursor:pointer;
 }
 #imgId40{
-    background-image:url();
+    background-image:url(https://media.kohlsimg.com/is/image/kohls/5485729_Gold_sw?wid=30&hei=30&op_sharpen=1);
+    cursor:pointer;
 }
 #imgId41{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_…ive_Teal_Palm_Trees_sw?wid=30&hei=30&op_sharpen=1
+    );
+    cursor:pointer;
 }
 #imgId42{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_…on_Yellow_Circle_Dy_sw?wid=30&hei=30&op_sharpen=1
+    );
+    cursor:pointer;
 }
 #imgId43{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_Green_Gold_sw?wid=30&hei=30&op_sharpen=1
+    );
+    cursor:pointer;
 }
 #imgId44{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_Black_sw?wid=30&hei=30&op_sharpen=1);
+    cursor:pointer;
 }
 #imgId45{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_…on_Yellow_Circle_Dy_sw?wid=30&hei=30&op_sharpen=1
+    );
+    cursor:pointer;
 }
 #imgId46{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_Green_Gold_sw?wid=30&hei=30&op_sharpen=1
+    );
+    cursor:pointer;
 }
 #imgId47{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_…ive_Teal_Palm_Trees_sw?wid=30&hei=30&op_sharpen=1
+    );
+    cursor:pointer;
 }
 #imgId48{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_…on_Yellow_Circle_Dy_sw?wid=30&hei=30&op_sharpen=1
+    );
+    cursor:pointer;
 }
 #imgId49{
-    background-image:url();
+    background-image:url(	https://media.kohlsimg.com/is/image/kohls/5485729_…ive_Teal_Palm_Trees_sw?wid=30&hei=30&op_sharpen=1
+    );
+    cursor:pointer;
 }
 
 
-
+.size20{
+    font-size:25px;
+    padding:5px;
+    font-weight:bold;
+}
 
 
 
@@ -297,9 +427,42 @@ body{
 
 
 /* quantity add remove css started */
+#incDec{
+width:100%;
+height:auto;
+/* background-color:pink;
+border:1px solid red; */
+margin-top:5px;
+}
+#incDec>p{
+    font-size:25px;
+    padding:5px;
+}
 .Quantity-flex{
     display:flex;
+    width:100%;
+    height:auto;
+    margin-top:3px;
 }
+.Quantity-flex>#decrement{
+    /* width:50px;
+    height:auto; */
+    font-size:20px;
+    padding-left:15px;
+    padding-right:15px;
+    cursor:pointer;
+    margin-right:5px;
+}
+
+.Quantity-flex>#increment{
+    font-size:20px;
+    padding-left:15px;
+    padding-right:15px;
+    cursor:pointer;
+    margin-left:5px;
+    
+} 
+    
 /* add to cart button css started */
 
 .addToCart-btn{
@@ -311,10 +474,13 @@ body{
     padding-right:40%; */
     padding-top:2%;
     padding-bottom:2%;
+    margin-top:15px;
+    margin-bottom:15px;
     align-items:center;
     justify-content:center;
     color:white;
     cursor: pointer;
+
 
 }
 .addToCart-btn>div>i{
