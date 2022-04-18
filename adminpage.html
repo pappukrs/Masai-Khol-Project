@@ -7,11 +7,7 @@
     <title>Admin panel</title>
 </head>
 <style>
-    body{
-        /* background-image: url('https://www.firstinarchitecture.co.uk/wp-content/uploads/2020/10/FIA-Free-Clothes-CAD-Blocks-FI-400x250.jpg'); */
-        font-style: oblique;
-background-image: linear-gradient(skyblue,rgb(99, 85, 85) , rgb(137, 137, 167));
-    }
+    
     .main{
         margin :4%;
         background-color: rgb(74, 119, 159);
@@ -106,21 +102,287 @@ font-style: oblique;
    .nav>*{
      margin-top: 10px;
    }
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+#header_1 *{
+    cursor:pointer;
+}
+#header_1 {
+    width: 100%;
+    display: flex;
+    height: 40px;
+    border-bottom: 1px solid #aaa;
+    background-color: #eee;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    height: 75px;
+    border-bottom: 1px solid #ccc;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+#navbar>div:first-child {
+    display: flex;
+    width: 53%;
+}
+
+#navbar>div:nth-child(2) {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#logo {
+    width: auto;
+    text-align: center;
+}
+
+#logo>img {
+    width: 80%;
+    height: 80%;
+}
+
+#search_area {
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 100%;
+    border-radius: 5px;
+    width: 70%;
+}
+
+#search_area>i {
+    font-size: 180%;
+
+}
+
+#search_area>input {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    margin-left: 10px;
+    font-size: large;
+    outline: none;
+}
+
+
+
+#user>div {
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 84%;
+    /* overflow: hidden; */
+    text-align: center;
+    position: relative;
+}
+
+#user>div::after {
+    content: 'i';
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: #ccfbeb;
+    position: absolute;
+    top: 0px;
+    left: -6px;
+}
+
+#user>div>i {
+    font-size: 217%;
+    margin-top: 7px;
+}
+
+#cart {
+    text-align: center;
+}
+
+#cart>div {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+
+#cart>div>i {
+    font-size: 280%;
+}
+
+#cart>div>div {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    font-size: small;
+    width: 15px;
+    height: 15px;
+    top: 6px;
+    left: 22px;
+    align-items: center;
+    /* text-align: center; */
+    justify-content: center;
+}
+
+#checkout {
+    text-align: center;
+}
+
+#checkout>div {
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+#checkout>div>i {
+    font-size: 182%;
+}
+
+#header_2 {
+    width: 100%;
+    height: 44px;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 20px 5px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header_2>div:first-child {
+    display: flex;
+
+    height: 25px;
+    align-items: center;
+    /* width: fit-content;
+    height: fit-content; */
+}
+
+#header_2>div:nth-child(2) {
+    display: flex;
+}
+
+#short>div {
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin: 3px;
+    margin-right: 15px;
+}
+
+#store {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#header_2>div:nth-child(3) {
+    align-self: flex-end;
+}
+
+#coupon,
+#help {
+    position: relative;
+    margin-right: 60px;
+}
+
+#coupon::before,
+#help::before {
+    content: '$';
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 1px;
+    position: absolute;
+    left: -30px;
+    text-align: center;
+}
+
+#help::before {
+    content: '?';
+}
+
+#shipping_banner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+    /* border: 1px solid black; */
+    background-color: black;
+    font-size: 20px;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 60px;
+}
+
 
 </style>
 <body>
-    <div class="nav">
-        <!-- <img src="https://www.firstinarchitecture.co.uk/wp-content/uploads/2020/10/FIA-Free-Clothes-CAD-Blocks-FI-400x250.jpg" alt=""> -->
-     <div>
-        <a href=""> <img src="https://cs.kohls.com/euf/assets/images/2021/kohls-help-logo.svg" alt="">
-        </a>
-     </div>   
-     <div> Welcome to  Admin Pannel</div>
-     <div><div>
-         <a href=""> <img src="https://cs.kohls.com/euf/assets/images/2021/kohls-help-logo.svg" alt="">
-         </a>
-      </div>  </div>
-     </div>
+    <div id="header_1">
+        <span style="color:#da2128;font-size: 14px; cursor: pointer;"><b style="font-size: 16px;">HOORAY</b>—Everyone
+            gets <b style="font-size: 16px;">FREE SHIPPING</b>!
+            <span style="font-size: 10px;text-decoration: underline;">details </span> </span>
+        <!-- Fast & free store pickup! details -->
+        <span style="font-size: 14px;cursor: pointer;"><b style="font-size: 16px;">&NonBreakingSpace; Fast & free
+            </b>store pickup! <span style="font-size: 10px;text-decoration: underline;">details</span> </span>
+        <!-- Take an extra 30%, 20% or 15% off when you use a Kohl's Card. details -->
+        <span style="font-size: 14px;cursor: pointer;"><b style="font-size: 16px;">&NonBreakingSpace; Take an extra
+            </b>30%, 20% or 15% off when you use a Kohl's Card. <span
+                style="font-size: 10px;text-decoration: underline;">details</span> </span>
+    </div>
+
+    <nav id="navbar">
+        <div>
+            <div id="logo">
+                <img src="./image/kohls_logo.jpg" alt="">
+            </div>
+            <div id="search_area">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="search" placeholder="What are you looking for today?">
+            </div>
+        </div>
+        <div>
+            <div id="user">
+                <div>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <span>Account</span>
+            </div>
+            <div id="cart">
+                <div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div>0</div>
+                </div>
+                <span>$0.00</span>
+            </div>
+            <div id="checkout">
+                <div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <span>Checkout</span>
+            </div>
+        </div>
+    </nav>
+
     <div id="item"></div>
     <div id="big">
     
@@ -134,7 +396,60 @@ font-style: oblique;
 <script> 
 
 var usercollection=JSON.parse(localStorage.getItem('usercollection'))
-var data=JSON.parse(localStorage.getItem('cardata'))
+if(JSON.parse(localStorage.getItem('cardata'))==null)
+{data= [
+    {
+      image_url:
+        "https://content.shop4reebok.com/static/Product-EX4296/reebok_EX4296_1.jpg.plp",
+      name: "MEN'S REEBOK RUNNING ROADMAP SHOES",
+      price: 1170,
+      rating: "$2599",
+    },
+    {
+      image_url:
+        "https://content.shop4reebok.com/static/Product-EX3921/reebok_EX3921_1.jpg.plp",
+      name: "MEN'S REEBOK SWIM ARUBA FLIP SLIPPERS ",
+      price: 699,
+      rating: 999,
+    },
+    {
+      image_url:
+        "https://content.shop4reebok.com/static/Product-EX4160/reebok_EX4160_1.jpg.plp",
+      name: " MEN'S REEBOK RUNNING AUSTIN SHOES",
+      price: 945,
+      rating: 2099,
+    },
+    {
+      image_url:
+        "https://content.shop4reebok.com/static/Product-FV8798/MEN_SWIM_SLIPPERS_FV8798_1.jpg.plp",
+      name: "MEN'S REEBOK SWIM AVENGER FLIP LP SLIPPERS",
+      price: 399,
+      rating: 799,
+    },
+    {
+      image_url:
+        "https://content.shop4reebok.com/static/Product-EW5173/reebok_EW5173_1.jpg.plp",
+      name: "MEN'S REEBOK RUNNING TEMPO SHOES ",
+      price: 1620,
+      rating: 3599,
+    },
+    {
+      image_url:
+        "https://content.shop4reebok.com/static/Product-FV7329/reebok_FV7329_1.jpg.plp ",
+      name: " MEN'S REEBOK RUNNING ASTRO BOOSTER SHOES ",
+      price: 1440,
+      rating: 3199,
+    },
+    {
+      image_url:
+        "https://content.shop4reebok.com/static/Product-GD8567/MEN_TRAINING_PANTS_GD8567_1.jpg.plp ",
+      name: " MEN'S TRAINING WORKOUT READY ELITAGE PANTS ",
+      price: 1999,
+      rating: 3199,
+    }]} 
+    else{
+        data=JSON.parse(localStorage.getItem('cardata'))
+    }
 var men=0;
 var women=0;
 data.forEach((x)=>{
@@ -236,8 +551,8 @@ function SHOW(){
 
     var name = document.createElement('label')
     name.innerText = e.name
-    var p = document.createElement('p')
-    p.innerText = e.rating
+    // var p = document.createElement('p')
+    // p.innerText = e.rating
 
     var price = document.createElement('p')
     price.innerText = e.price
@@ -252,7 +567,7 @@ function SHOW(){
 
 
 
-    div.append(img, name, price, p, b)
+    div.append(img, name, price,  b)
     document.getElementById('items').append(div)
 })
 var hide=document.createElement('button')
@@ -263,7 +578,7 @@ hide.addEventListener('click',function(){
         x.remove();
         hide.remove()
     })
-    
+    window.location.reload()
 })
 document.getElementById('r').append(hide)
   
