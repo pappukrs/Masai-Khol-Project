@@ -58,17 +58,19 @@ function changeTothisImage(img){
     {url:"../Image/5485729_Light_Pink_Texture.jpg",name:"LIGHT PINK TEXTURE"}, //47
     ]
     localStorage.setItem('imgArr',JSON.stringify(imgArr));
-    
+    var productColor=document.querySelector('#colorDECIDER');
     function diffColorImg(index){
         var single_img=document.querySelector('#single-img');
        var firstIn4=document.querySelector('#firstIn4');
       var img = JSON.parse(localStorage.getItem('imgArr'));
+      
       img.forEach((pic,idx)=>{
         if(idx===index){
             console.log("yes");
             single_img.src=pic.url;  
             firstIn4.src=pic.url;
             firstIn4.style.opacity="1";
+            productColor.innerText="color:"+" "+pic.name;
         }
       })
     }
@@ -79,12 +81,12 @@ function changeTothisImage(img){
     document.querySelector('#increment').addEventListener('click',increment);
     document.querySelector('#decrement').addEventListener('click',decrement);
     var quantityCount=0;
-    if(localStorage.getItem('quantityCount')===null){
-        quantityCount=0;
-    }
-    else{
-        quantityCount=localStorage.getItem('quantityCount');
-    }
+    // if(localStorage.getItem('quantityCount')===null){
+    //     quantityCount=0;
+    // }
+    // else{
+    //     quantityCount=localStorage.getItem('quantityCount');
+    // }
     document.querySelector("#quantityDisplay").innerText=quantityCount;
     function decrement(){
         if(quantityCount<=0){
@@ -93,14 +95,41 @@ function changeTothisImage(img){
         else{
             quantityCount--;
         }
-        localStorage.setItem('quantityCount',quantityCount);
+        // localStorage.setItem('quantityCount',quantityCount);
         document.querySelector("#quantityDisplay").innerText=quantityCount;
     }
     function increment(){
        
             quantityCount++;
     
-        localStorage.setItem('quantityCount',quantityCount);
+        // localStorage.setItem('quantityCount',quantityCount);
         document.querySelector("#quantityDisplay").innerText=quantityCount;
         
     }
+
+    document.querySelector('.addToCart-btn').addEventListener('click',function(){
+        addedInCART();
+    });
+
+    var cartArr;
+    if(localStorage.getItem('cartArr')===null){
+        cartArr=[];
+    }
+    else{
+        cartArr=JSON.parse(localStorage.getItem('cartArr'));
+    }
+    function addedInCART(){
+    var obj={
+        url:document.querySelector('#single-img').src,
+        size:document.querySelector('#select').value,
+        color:document.querySelector('#colorDECIDER').innerText,
+        quantity:document.querySelector("#quantityDisplay").innerText,
+        prize:"$6.99",
+        
+    }
+    cartArr.push(obj);
+    localStorage.setItem('cartArr',JSON.stringify(cartArr));
+    
+    alert("congratulation!! Product added to cart");
+    }
+    console.log(localStorage.getItem('cartArr'));
