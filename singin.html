@@ -11,6 +11,52 @@
 </head>
 
 <body>
+    <div id="header_1">
+        <span style="color:#da2128;font-size: 14px; cursor: pointer;"><b style="font-size: 16px;">HOORAY</b>—Everyone
+            gets <b style="font-size: 16px;">FREE SHIPPING</b>!
+            <span style="font-size: 10px;text-decoration: underline;">details </span> </span>
+        <!-- Fast & free store pickup! details -->
+        <span style="font-size: 14px;cursor: pointer;"><b style="font-size: 16px;">&NonBreakingSpace; Fast & free
+            </b>store pickup! <span style="font-size: 10px;text-decoration: underline;">details</span> </span>
+        <!-- Take an extra 30%, 20% or 15% off when you use a Kohl's Card. details -->
+        <span style="font-size: 14px;cursor: pointer;"><b style="font-size: 16px;">&NonBreakingSpace; Take an extra
+            </b>30%, 20% or 15% off when you use a Kohl's Card. <span
+                style="font-size: 10px;text-decoration: underline;">details</span> </span>
+    </div>
+
+    <nav id="navbar">
+        <div>
+            <div id="logo">
+                <img src="./image/kohls_logo.jpg" alt="">
+            </div>
+            <div id="search_area">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="search" placeholder="What are you looking for today?">
+            </div>
+        </div>
+        <div>
+            <div id="user">
+                <div>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <span>Account</span>
+            </div>
+            <div id="cart">
+                <div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div>0</div>
+                </div>
+                <span>$0.00</span>
+            </div>
+            <div id="checkout">
+                <div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <span>Checkout</span>
+            </div>
+        </div>
+    </nav>
+
     <div id="main">
         <div class="title">
             <h2>Create Account</h2>
@@ -38,7 +84,7 @@
             <div>
                 <label for="">Password</label>
                 <br>
-                <input type="text" name="" id="Password">
+                <input type="password" name="" id="Password">
             </div>
         </div>
 
@@ -56,15 +102,15 @@
         <img src="https://www.kohls.com/account/media/42.0.0-693/images/loyaltyV2/kohls-rewards-horizontal.png"
             alt=""><i class="fa-solid fa-2xl fa-circle-question"></i>
         <div style="margin-top: 20px;" class="rd">
-            <label style="margin-left: 20px;" class="container">I signed up In store
-                <input type="radio" name="radio" id="s">
+            <label style="margin-left: 20px;" class="container"><p id="six"> I signed up In store
+              </p>  <input type="radio" name="radio" id="s">
                 <span class="check"></span>
             </label>
-            <label style="margin-left: 20px;" class="container">Enroll Today!
+            <label style="margin-left: 20px;" class="container"><p id="six">Enroll Today!</p>
                 <input type="radio" name="radio" id="deen">
                 <span class="check"></span>
             </label>
-            <label style="margin-left: 20px;" class="container">No Thanks.
+            <label style="margin-left: 20px;" class="container"><p id="six">No Thanks.</p>
                 <input type="radio" name="radio" id="sai" checked>
                 <span class="check"></span>
             </label>
@@ -102,7 +148,7 @@
 
     <div class="button">
         <button id="submit" onclick="saveuser()">Create Account</button>
-        <button id="cancal" onclick="back()">Cancal</button>
+        <button id="cancal" onclick="back()">Cancel</button>
     </div>
     <div id = "mainp">
         <div id = "containerp">
