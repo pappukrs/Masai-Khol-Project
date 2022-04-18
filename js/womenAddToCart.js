@@ -8,7 +8,7 @@ function changeTothisImage(img){
     }
     
     
-    var imgArr=[{url:"../image/5485729_Black_Sun_Trees.webp",name:"BLACK SUN TREES"},      //0
+    var imgArr=[{url:"../image/5485729_Black_Sun_Trees.webp",name:"BLACK SUN TREES",},      //0
     {url:"../Image/5485729_Purple_Dot_Stripe (1).webp",name:"PURPLE DOT STRIPE"},           //1
     {url:"../Image/5485729_Red_White_Blue_Tie_Dye.webp",name:"RED WHITE BLUE TIE DYE"},      //2                               
     {url:"../Image/5485729_Pink_Geo_Flower.webp",name:"PINK GEO FLOWER"},                //3                                    
@@ -66,7 +66,7 @@ function changeTothisImage(img){
       
       img.forEach((pic,idx)=>{
         if(idx===index){
-            console.log("yes");
+            // console.log("yes");
             single_img.src=pic.url;  
             firstIn4.src=pic.url;
             firstIn4.style.opacity="1";
@@ -131,4 +131,4 @@ function changeTothisImage(img){
     
     alert("congratulation!! Product added to cart");
     }
-    // console.log(localStorage.getItem('cartArr'));
+     console.log(localStorage.getItem('cartArr'));
