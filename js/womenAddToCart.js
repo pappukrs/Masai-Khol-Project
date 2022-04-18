@@ -107,9 +107,7 @@ function changeTothisImage(img){
         
     }
 
-    document.querySelector('.addToCart-btn').addEventListener('click',function(){
-        addedInCART();
-    });
+    
 
     var cartArr;
     if(localStorage.getItem('cartArr')===null){
@@ -127,9 +125,10 @@ function changeTothisImage(img){
         prize:"$6.99",
         
     }
+    console.log(obj);
     cartArr.push(obj);
     localStorage.setItem('cartArr',JSON.stringify(cartArr));
     
     alert("congratulation!! Product added to cart");
     }
-    console.log(localStorage.getItem('cartArr'));
+    // console.log(localStorage.getItem('cartArr'));
