@@ -483,11 +483,7 @@
         </div>
     </div>
 </body>
-<script> if (JSON.parse(localStorage.getItem('userecord')) == null)
-        userecord = []
-    else {
-        userecord = JSON.parse(localStorage.getItem('userecord'))
-    }
+<script> 
     var usercollection = JSON.parse(localStorage.getItem('usercollection'))
     function log() {
         var email = document.getElementById("email").value;
@@ -496,27 +492,15 @@
         if(usercollection.length==0){
             alert("NO reocrd found")
         }
-        usercollection.forEach(function (e) {
+        usercollection.forEach(function (e,i) {
 
             console.log(email, pass)
             if (e.e === email && e.p === pass) {
                 alert(`Welcome to store ${e.f}`)
                 flag = true
-                var name = e.f
-                name = {
-                    add: {
-                        location:"",
-                        city: "",
-                        Zipcode: "",
-                    },
-                    cart: [],
-                    about: "",
-                    Email:email
-                }
-                userecord.push(name)
-                console.log(userecord)
-                localStorage.setItem('userrecord',JSON.stringify( userecord))
-                window.open('./myinfo.html')
+               localStorage.setItem('curemail',i)
+               
+                window.location.href='./myinfo.html'
             }
 
 
