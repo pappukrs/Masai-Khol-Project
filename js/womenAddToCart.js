@@ -131,4 +131,4 @@ function changeTothisImage(img){
     
     alert("congratulation!! Product added to cart");
     }
-     console.log(localStorage.getItem('cartArr'));
+    //  console.log(localStorage.getItem('cartArr'));
