@@ -4,9 +4,12 @@
     box-sizing: border-box;
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
-#header_1 *{
-    cursor:pointer;
+
+header {
+    /* position: relative; */
 }
+
+
 #header_1 {
     width: 100%;
     display: flex;
@@ -78,7 +81,10 @@
     outline: none;
 }
 
+/* #user {
+    
 
+} */
 
 #user>div {
     border: 2px solid black;
@@ -104,6 +110,74 @@
 #user>div>i {
     font-size: 217%;
     margin-top: 7px;
+}
+
+
+#user_drop_down,#user_drop_down2{
+    display: none;
+    position: absolute;
+    width: 290px;
+    padding: 20px;
+    background-color: rgb(236, 236, 236);
+    top: 74px;
+    right: 305px;
+}
+
+
+#user_drop_down>div,#user_drop_down2>div{
+    width: 100%;
+}
+
+#user_drop_down>div>div:first-child{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#user_drop_down>div>div:first-child>button{
+    width: 45%;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    border: 0;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+#user_drop_down>div>div:first-child>span{
+    width: 50%;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#user_drop_down>div>div:nth-child(2){
+    display: flex;
+    background-color: #dceef0;
+}
+
+#user_drop_down>div>div:nth-child(3){
+    background-image: url(/Masai-Khol-Project/image/wallet.png);
+    width: 100%;
+    height: 200px;
+    margin-top: 15px;
+}
+
+
+#user_drop_down2{
+    display: none;
+    padding: 0;
+    padding-top: 10px;
+}
+
+#user_drop_down2>div{
+    margin-bottom: 10px;
+}
+
+#user_drop_down2>div:nth-child(5){
+    background-image: url(/Masai-Khol-Project/image/wallet2.png);
+    width: 100%;
+    height: 360px;
+    margin-top: 15px;
 }
 
 #cart {
@@ -213,6 +287,58 @@
 
 #help::before {
     content: '?';
+}
+
+
+#category{
+    display: none;
+    width: 240px;
+    /* border: 1px solid saddlebrown; */
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#category>div{
+    width: 100%;
+    height: 25px;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+}
+
+#category>div:hover{
+    background-color: rgb(236, 236, 236);
+}
+
+/* #category>div:hover + #sub_category{
+    display: flex;
+} */
+
+#sub_category{
+    display: none;
+    width: 550px;
+    height: 722px;
+    border: 1px solid rgb(197, 195, 195);
+    background-color: rgb(236, 236, 236);
+    position: absolute;
+    left: 240px;
+    z-index: 1;
+}
+
+#sub_category>div{
+    width: 180px;
+    margin: 20px;
+}
+
+#sub_category>div>p{
+    margin: 15px;
+    font-size: 15px;
+}
+
+#sub_category>div>p:hover{
+    text-decoration: underline;
 }
 
 #shipping_banner {

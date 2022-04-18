@@ -131,4 +131,10 @@ function changeTothisImage(img){
     
     alert("congratulation!! Product added to cart");
     }
-     console.log(localStorage.getItem('cartArr'));
+    //  console.log(localStorage.getItem('cartArr'));
+
+    // footer wala js
+    document.querySelector('#top').addEventListener('click', () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    })
