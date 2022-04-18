@@ -1,161 +1,24 @@
 <html>
-    <head>
-        <style>
-            body{
-                margin: 0px;
-            }
-            #mainp{
-                
-                background-color:#F0F0F0;
-                
-            }
 
-            #containerp{
-                display: flex;
-                width:70%;
-                background-color:#F0F0F0;
-                margin-left: auto;
-                margin-right: auto;
-                padding-top: 2%;
-                margin-bottom:1%;
-            }
+<head>
+    <link rel="stylesheet" href="/Masai-Khol-Project/css/footer.css">
+    <style>
+        body {
+            margin: 0px;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/cac5cd5a31.js" crossorigin="anonymous"></script>
+</head>
 
-            #social{
-                width:50%;
-                display: flex;
-                align-items: center;
-                border-right-width: 2px;
-                border-right-color: gainsboro;
-                border-right-style: solid;
-            }
+<body>
 
-            #social > h4, p{
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            #social > p{
-                font-size: 20px;
-            }
-
-            #topright{
-                width:50%;
-                display: flex;
-                align-items: center;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            #app{
-                width:40%;
-                display: flex;
-                align-items: center;
-                
-                
-            }
-
-            #app > img{
-                float: left;
-                width:  60px;
-                height: 60px;
-                object-fit: cover;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            #app > h4{
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            #scantext{
-                width:50%;
-                display: block;
-                align-items: center;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            #scantext>p{
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                font-size: 12px;
-                margin-bottom: 5px;
-                margin-top: 0%;
-            }
-
-            #scantext>input{
-                background-color: black;
-                color: white;
-                width: 100px;
-                border-radius: 5px;
-                border-width: 0px;
-            }
-
-            #footergrid{
-                display: grid;
-                grid-template-columns: repeat(5, 1fr);
-                gap: auto;
-                width: 70%;    
-                margin-left: auto;
-                margin-right: auto;
-                border-top: 2px solid gainsboro;
-                border-bottom: 2px solid gainsboro;
-                padding-top: 1%;
-                padding-bottom: 1%;
-            }
-
-            .gridcontent{
-                width:80%;
-                margin-left:auto;
-                margin-right: auto;
-                height: max-content;
-            }
-
-            .gridcontent>h5{
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                margin-bottom: 30px;
-            }
-
-            .gridcontent>p{
-                font-family:'Arial';
-                font-size: 12px;
-                margin-bottom: 30px;
-                
-            }
-            #disclaimer{
-                margin-top: 30px;
-                padding-bottom: 20%;
-            }
-
-            #disclaimer>p{
-                
-                text-align: center;
-                font-family:'Arial';
-                font-size: 11px;
-                margin-top: 15px;
-            }
-
-            #lastline{
-                width:max-content;
-                display: flex;
-                margin: auto;
-            }
-            #lastline>h6{
-                font-family:'Arial';
-                font-size: 11px;
-                margin-left: auto;
-                margin-right: auto;
-                justify-content: center;
-            }
-        </style>
-        <script src="https://kit.fontawesome.com/cac5cd5a31.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div id = "mainp">
-        <div id = "containerp">
-            <div id = "social">
+    <div id="mainp">
+        <div id="top">
+            <p>⮹</p>
+            <p>Back To Top</p>
+        </div>
+        <div id="containerp">
+            <div id="social">
                 <h4>CONNECT<br>WITH US</h4>
                 <p><i class="fa-brands fa-facebook-f"></i></p>
                 <p><i class="fa-brands fa-twitter"></i></p>
@@ -163,20 +26,20 @@
                 <p><i class="fa-brands fa-instagram"></i></p>
                 <p><i class="fa-brands fa-youtube"></i></p>
             </div>
-            <div id = "topright">
-            <div id = "app">
-                <h4>GET OUR<br>APP</h4>
-                <img src = "https://media.kohlsimg.com/is/image/kohls/AppStore-qr_code2020?scl=1&fmt=png8">
-            </div>
-            <div id = "scantext">
-                <p>Scan the code to download
-                    the Kohl's App today.</p>
-                <input type = "button" value = "Learn More">
+            <div id="topright">
+                <div id="app">
+                    <h4>GET OUR<br>APP</h4>
+                    <img src="https://media.kohlsimg.com/is/image/kohls/AppStore-qr_code2020?scl=1&fmt=png8">
+                </div>
+                <div id="scantext">
+                    <p>Scan the code to download
+                        the Kohl's App today.</p>
+                    <input type="button" value="Learn More">
+                </div>
             </div>
         </div>
-        </div>
-        <div id = "footergrid">
-            <div class = "gridcontent">
+        <div id="footergrid">
+            <div class="gridcontent">
                 <h5>CUSTOMER SERVICE</h5>
                 <p>Contact Us</p>
                 <p>Shipping</p>
@@ -187,7 +50,7 @@
                 <p>Kohl's Blog</p>
                 <p>Kohl's Cash</p>
             </div>
-            <div class = "gridcontent">
+            <div class="gridcontent">
                 <h5>SHOP KOHL’S</h5>
                 <p>Get 15% off when you
                     sign up for our emails</p>
@@ -195,8 +58,8 @@
                 <p>Store Locator</p>
                 <p>Gift Cards</p>
                 <p>Kohl’s Coupons</p>
-             </div>
-            <div class = "gridcontent">
+            </div>
+            <div class="gridcontent">
                 <h5>MY ACCOUNT</h5>
                 <p>Sign In</p>
                 <p>My Account</p>
@@ -206,14 +69,14 @@
                 <p>Gift Card Balance &
                     Kohl’s Cash Balance</p>
             </div>
-            <div class = "gridcontent">
+            <div class="gridcontent">
                 <h5>KOHL’S CARD</h5>
                 <p>Benefits</p>
                 <p>Pay & Manage Card</p>
                 <p>Apply for a Kohl’s Card</p>
                 <p>See if you prequalify</p>
             </div>
-            <div class = "gridcontent">
+            <div class="gridcontent">
                 <h5>ABOUT KOHL’S</h5>
                 <p>Our Websites</p>
                 <p>Community</p>
@@ -227,22 +90,30 @@
                 <p>Advertise with Us</p>
             </div>
         </div>
-        <div id = "disclaimer">
+        <div id="disclaimer">
             <p>© 2022 Kohl’s, Inc.<br>
                 KOHL’S® and Kohl’s brand names are trademarks owned by KIN, Inc.<br>
                 All rights reserved.</p>
-            <p>Android, Google Play and the Google Play logo are trademarks of Google Inc. App Store is a service mark of Apple Inc.</p>
-            
-        <div id = "lastline">
-            <h6><u>Legal Notices</u>,&nbsp;</h6>
-            <h6><u>Privacy Policy</u>,&nbsp;</h6>
-            <h6><u>California Privacy Policy</u>,&nbsp;</h6>
-            <h6><u>CA-Do Not Sell My Personal Information</u>,&nbsp;</h6>
-            <h6><u>About Our Ads</u>,&nbsp;</h6>
-            <h6><u>California Transparency in Supply Chains Act</u>.</h6>
-        </div>
-        
+            <p>Android, Google Play and the Google Play logo are trademarks of Google Inc. App Store is a service mark
+                of Apple Inc.</p>
+
+            <div id="lastline">
+                <h6><u>Legal Notices</u>,&nbsp;</h6>
+                <h6><u>Privacy Policy</u>,&nbsp;</h6>
+                <h6><u>California Privacy Policy</u>,&nbsp;</h6>
+                <h6><u>CA-Do Not Sell My Personal Information</u>,&nbsp;</h6>
+                <h6><u>About Our Ads</u>,&nbsp;</h6>
+                <h6><u>California Transparency in Supply Chains Act</u>.</h6>
+            </div>
+
         </div>
     </div>
-    </body>
+</body>
+<script>
+    document.querySelector('#top').addEventListener('click', () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    })
+</script>
+
 </html>
