@@ -28,3 +28,10 @@ if(l>4){l=4;}
 if(l>=12){l=0};
 }
 }
+
+
+// footer wala js
+document.querySelector('#top').addEventListener('click', () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+})
