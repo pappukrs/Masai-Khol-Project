@@ -37,4 +37,58 @@ document.querySelector('#top').addEventListener('click', () => {
 })
 
 
-document.querySelector()
+// document.querySelector()
+
+
+// document.querySelector("#totalCartProducts").addEventListener("load","load");
+
+
+// function load(){
+//     //cart number of product
+// if(localStorage.getItem('totalCartProducts')===null){
+//     totalCartProducts=0;
+// }
+// else{
+//     totalCartProducts=localStorage.getItem('totalCartProducts');
+// }
+// //totalcart price
+// if(localStorage.getItem('totalCartPrice')===null){
+//     totalCartPrice=0;
+// }
+// else{
+//     totalCartPrice=localStorage.getItem('totalCartPrice')
+// }
+
+// var tlcart= document.querySelector('#totalCartProducts');
+// var tlcartPrice=document.querySelector("#totalCartPrice");
+// tlcart.innerText=totalCartProducts;
+// tlcartPrice.innerText=totalCartPrice;
+
+
+// }
+
+
+window.addEventListener('load', (event) => {
+    console.log('page is fully loaded');
+    if(localStorage.getItem('totalCartProducts')===null){
+        totalCartProducts=0;
+    }
+    else{
+        totalCartProducts=localStorage.getItem('totalCartProducts');
+    }
+    //totalcart price
+    if(localStorage.getItem('totalCartPrice')===null){
+        totalCartPrice=0;
+    }
+    else{
+        totalCartPrice=localStorage.getItem('totalCartPrice')
+    }
+    console.log(totalCartPrice)
+    
+    var tlcart= document.querySelector('#totalCartProducts');
+    var tlcartPrice=document.querySelector("#totalCartPrice");
+    tlcart.innerText=totalCartProducts;
+    tlcartPrice.innerText="$"+totalCartPrice;
+
+
+  });

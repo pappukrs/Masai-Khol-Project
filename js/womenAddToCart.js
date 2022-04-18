@@ -123,6 +123,7 @@ function changeTothisImage(img){
     else{
         totalCartProducts=localStorage.getItem('totalCartProducts');
     }
+    // localStorage.clear("totalCartProducts");
     //totalcart price
     if(localStorage.getItem('totalCartPrice')===null){
         totalCartPrice=0;
@@ -130,7 +131,7 @@ function changeTothisImage(img){
     else{
         totalCartPrice=localStorage.getItem('totalCartPrice')
     }
-    
+    // localStorage.clear("totalCartPrice");
     function addedInCART(){
         var tlcart= document.querySelector('#totalCartProducts');
         var tlcartPrice=document.querySelector("#totalCartPrice")
@@ -156,10 +157,10 @@ function changeTothisImage(img){
     // console.log(obj);
     
     tlcart.innerText=cartArr.length;
-    tlcartPrice.innerText="$"+sum;    //Math.round(6.99*cartArr.length)
+    tlcartPrice.innerText="$"+Math.round(sum);    //Math.round(6.99*cartArr.length)
     localStorage.setItem('cartArr',JSON.stringify(cartArr));
     localStorage.setItem('totalCartProducts',cartArr.length);
-    localStorage.setItem('totalCartPrice', tlcartPrice);
+    localStorage.setItem('totalCartPrice', Math.round(sum));
     
     alert("congratulation!! Product added to cart");
     }
@@ -177,3 +178,32 @@ function changeTothisImage(img){
     function checkoutPAGE(){
         window.location.href="./login.html";
     }
+
+
+
+//onload event
+
+    window.addEventListener('load', (event) => {
+        console.log('page is fully loaded');
+        if(localStorage.getItem('totalCartProducts')===null){
+            totalCartProducts=0;
+        }
+        else{
+            totalCartProducts=localStorage.getItem('totalCartProducts');
+        }
+        //totalcart price
+        if(localStorage.getItem('totalCartPrice')===null){
+            totalCartPrice=0;
+        }
+        else{
+            totalCartPrice=localStorage.getItem('totalCartPrice')
+        }
+        console.log(totalCartPrice)
+        
+        var tlcart= document.querySelector('#totalCartProducts');
+        var tlcartPrice=document.querySelector("#totalCartPrice");
+        tlcart.innerText=totalCartProducts;
+        tlcartPrice.innerText="$"+totalCartPrice;
+    
+    
+      });
