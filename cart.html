@@ -21,7 +21,6 @@
 
             #leftcontainer{
                 display: block;
-                
                 height: 60%;
                 width:55%;
             }
@@ -32,13 +31,18 @@
                 border-radius: 15px;
                 height:20%;
                 margin-bottom: 2%;
+
             }
 
             #productdetails{
                 display: block;
                 background-color: white;
                 border-radius: 15px;
-                height:60%;
+                height:auto;
+            }
+
+            #productdetails>div{
+                margin: 10px;
             }
 
             #imganddetails{
@@ -68,6 +72,7 @@
             }
 
             #price{
+                
                 margin-top: 2%;
                 width: 20%;
                 text-align: right;
@@ -75,6 +80,7 @@
 
             #pimg{
                 display: flex;
+                margin-left: 1%;
                 width: 20%;
             }
 
@@ -87,8 +93,7 @@
 
             #pdetails{
                 
-                margin-left: auto;
-                margin-right: auto;
+                margin-left: 2%;
             }
             #pdetails>p{
                 margin-left: auto;
@@ -100,10 +105,9 @@
 
 
             #rightcontainer{
-                display:grid;
+                display:flex;
                 margin-left: auto;
                 margin-right: auto;
-                grid-template-columns: repeat(2fr,1);
                 width:40%;
                 background-color: white;
                 height:50%;
@@ -123,24 +127,49 @@
             Apply Coupons
         </div>
 
-        <div id = "productdetails">
+     <div id = "productdetails">
 
-            <div id = "imganddetails">
+    </div>
+
+    <div id = "rightcontainer">
+        
+    </div>
+
+    </div>
+
+    
+    </body>
+
+    <script>
+
+        var cartData = JSON.parse(localStorage.getItem('cartArr'));
+        var productdetails = document.querySelector('#productdetails')
+        console.log(cartData)
+        // var totalitems = cartData.length;
+        displayCart(cartData)
+        function displayCart(cartData){
+        // document.querySelector('#leftcontainer').innerHTML = '';
+        cartData.forEach((cartitem, cartindex) => {
+         var div = document.createElement('div')
+        //  div.setAttribute('id', 'productdetails');
+                var content = 
+                `
+                <div id = "imganddetails">
              <div id = "pimg">
-                <img  id ="pimage">
+                <img  id ="pimage" src = ${cartitem.url}>
         
             </div>
 
             <div id = "pdetails">
-            <p id = "pname">Men's Sonoma Goods For Life® Knit Pajama Shorts</p>
-            <p id = "size">Size: L</p>
-            <p id = "pcolor">Color: Mnrl Grey</p>
+            <p id = "pname">${cartitem.name}</p>
+            <p id = "size">${cartitem.size}</p>
+            <p id = "pcolor">${cartitem.color}</p>
             </div>
             </div>
 
-            <div id = "bottompart">
+        <div id = "bottompart">
             <div id = "price">
-                $14.99
+               $ ${cartitem.prize}
             </div>
 
             <div id = "emptydiv"></div>
@@ -151,63 +180,20 @@
                 <p style = "margin-top: 0%;"><i class="fa-solid fa-trash-can"></i></p>
                 <p style = "margin-top: 0%;"><i class="fa-solid fa-minus"></i></p>
                
-                <p id = "quantity"></p>
+                <p style = "margin-top: 0%;" id = "quantity">${cartitem.quantity}</p>
 
                 <p style = "margin-top: 0%;"><i class="fa-solid fa-plus"></i></p>
 
             
             </div>
         </div>
-        </div>
-    </div>
-
-    <div id = "rightcontainer">
-        asasasa
-            </div>
-
-    </div>
-
-    
-    </body>
-
-    <script>
-       var cartArr = JSON.parse(localStorage.getItem('cartArr'));
-        var totalsum = cartArr.reduce(function(sum, ele, index, arr){
-            return sum + Number(ele.price);
-        }, 0);
-
-        var totalitems = cartArr.length;
-        document.querySelector('p').innerText = 'You have ' + " " + totalitems + " " + "items" + " "+ "in your cart and total is " + totalsum; 
-
-        function Rightside(cartArr){
-        document.querySelector('#rightcontainer').innerHTML = '';
-        cartArr.forEach((cartitem, cartindex) => {
-            
-        var box = document.createElement('div');
-        box.setAttribute('id', 'rightbox');
-        
-        var name = document.createElement('p');
-        name.textContent = cartitem.name;
-
-        var price = document.createElement('p');
-        price.textContent = cartArr.prize;
-
-        var rating = document.createElement('p');
-        rating.textContent = cartitem.rating;
-
-        var cartbutton = document.createElement('button');
-        cartbutton.innerText = 'Remove from Cart';
-
-        cartbutton.addEventListener('click', function(){
-            cartData.splice(cartindex, 1);
-            localStorage.setItem('cartData', JSON.stringify(cartData))
-            window.location.reload();
+            `
+            div.innerHTML = content
+            // document.querySelector('#leftcontainer').append(div)
+            productdetails.append(div)
         });
+        }
 
-        box.append(img, name, price, rating, cartbutton);
-        document.querySelector('#rightcontainer').append(box);
-        });
-    }
-    Rightside(cartData);
+
     </script>
 </html>
