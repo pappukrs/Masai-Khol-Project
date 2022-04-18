@@ -148,6 +148,14 @@ a{
     display:flex;
     flex-direction: row;
     border:1px solid red;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-top:2px;
+    margin-bottom:3px;
+}
+.price-cut-flex-item>div{
+    font-size:20px;
+    font-weight:bold;
 }
 
 .color-selector-grid{
@@ -158,7 +166,7 @@ a{
 
    gap:1%;
    border:1px solid red;
-   border-radius:40%;
+   border-radius:30%;
 
 }
 .color-selector-grid>div{
@@ -395,7 +403,11 @@ a{
 }
 
 
-
+.size20{
+    font-size:300px;
+    padding:5px;
+    font-weight:bold;
+}
 
 
 
@@ -415,17 +427,36 @@ a{
 
 
 /* quantity add remove css started */
-.incDec{
+#incDec{
 width:100%;
 height:10%;
 background-color:pink;
 border:1px solid red;
+margin-top:10px;
+}
+#incDec>p{
+    font-size:30px;
+    padding:10px;
 }
 .Quantity-flex{
     display:flex;
     width:100%;
     height:20%;
+    margin-top:5px;
 }
+.Quantity-flex>#decrement{
+    font-size:20px;
+    padding-left:15px;
+    padding-right:15px;
+    cursor:pointer;
+}
+.Quantity-flex>#increment{
+    font-size:20px;
+    padding-left:15px;
+    padding-right:15px;
+    cursor:pointer;
+}
+    
 /* add to cart button css started */
 
 .addToCart-btn{
