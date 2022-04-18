@@ -16,7 +16,7 @@ a{
  margin-left:4%;
  margin-right:4%;
  margin-top: 0%;
- border: 2px solid black;
+ /* border: 2px solid black; */
  /* overflow-x: hidden; */
  padding:1%;
 }
@@ -45,14 +45,14 @@ a{
     margin-left:0%;
     margin-right:0%;
     margin-top: 0%;
-    border:1px solid red;
+    /* border:1px solid red; */
     /* gap:10%; */
 
 }
 #left-contaiiner{
  width:65%;
  height:auto;
- border:1px solid black;
+ /* border:1px solid black; */
  margin-right:1%;
 }
 .flex-text3{
@@ -135,7 +135,7 @@ a{
     padding-right:15px;
     padding-top:10px;
     padding-bottom:10px;
-    border:1px solid teal;
+    /* border:1px solid teal; */
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .price-cut-flex{
@@ -147,7 +147,7 @@ a{
 .price-cut-flex-item{
     display:flex;
     flex-direction: row;
-    border:1px solid red;
+    /* border:1px solid red; */
     padding-top:5px;
     padding-bottom:5px;
     margin-top:2px;
@@ -165,7 +165,7 @@ a{
     height:50%;
 
    gap:1%;
-   border:1px solid red;
+   /* border:1px solid red; */
    border-radius:30%;
 
 }
@@ -509,7 +509,7 @@ margin-top:5px;
     margin-left:5%;
     margin-right:5%;
     margin-top: 4%;
-    border:2px solid greenyellow;
+    /* border:2px solid greenyellow; */
 }
 hr{
     width:90%;
