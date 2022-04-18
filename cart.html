@@ -1,0 +1,229 @@
+<html>
+    <head>
+        <style>
+            body{
+                margin: 0px;
+                background-color: #f3f3f3;
+            }
+
+            
+
+            
+            #maincontainer{
+                margin-left: auto;
+                margin-right: auto;
+                margin-top:5%;
+                display: flex;
+                width:80%;
+                margin-bottom:5%;
+                height: 80%;
+            }
+
+            #leftcontainer{
+                display: block;
+                height: 60%;
+                width:55%;
+            }
+
+            #coupons{
+                display: flex;
+                background-color: white;
+                border-radius: 15px;
+                height:20%;
+                margin-bottom: 2%;
+
+            }
+
+            #productdetails{
+                display: block;
+                background-color: white;
+                border-radius: 15px;
+                height:60%;
+            }
+
+            #imganddetails{
+                display: flex;
+                padding-top:3%;
+                align-content: top;
+            }
+
+            #bottompart{
+                display: flex;
+                align-items: baseline;
+            }
+
+            #emptydiv{
+                width:33%;
+            }
+
+            #quantitymain{
+                display:flex;
+                width: 40%;
+            }
+
+            #quantitymain>p{
+                display:flex;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #price{
+                
+                margin-top: 2%;
+                width: 20%;
+                text-align: right;
+            }
+
+            #pimg{
+                display: flex;
+                margin-left: 1%;
+                width: 20%;
+            }
+
+            #pimg>img{
+                
+                width:100%;
+                border-radius: 10px;
+                
+            }
+
+            #pdetails{
+                
+                margin-left: 2%;
+            }
+            #pdetails>p{
+                margin-left: auto;
+                margin-right: auto;
+                font-family: Arial;
+                font-weight: lighter;
+                text-align: left;
+            }
+
+
+            #rightcontainer{
+                display:flex;
+                margin-left: auto;
+                margin-right: auto;
+                width:40%;
+                background-color: white;
+                height:50%;
+                border-radius: 15px;
+            }
+
+
+            
+        </style>
+        <script src="https://kit.fontawesome.com/cac5cd5a31.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+<div id = "maincontainer">
+
+    <div id = "leftcontainer">
+        <div id = "coupons">
+            Apply Coupons
+        </div>
+
+     <div id = "productdetails">
+
+            <!-- <div id = "imganddetails">
+             <div id = "pimg">
+                <img  id ="pimage">
+        
+            </div>
+
+            <div id = "pdetails">
+            <p id = "pname">Men's Sonoma Goods For Life® Knit Pajama Shorts</p>
+            <p id = "size">Size: L</p>
+            <p id = "pcolor">Color: Mnrl Grey</p>
+            </div>
+            </div>
+
+        <div id = "bottompart">
+            <div id = "price">
+                $14.99
+            </div>
+
+            <div id = "emptydiv"></div>
+        
+            <div id = "quantitymain">
+                Save For Later
+            
+                <p style = "margin-top: 0%;"><i class="fa-solid fa-trash-can"></i></p>
+                <p style = "margin-top: 0%;"><i class="fa-solid fa-minus"></i></p>
+               
+                <p id = "quantity"></p>
+
+                <p style = "margin-top: 0%;"><i class="fa-solid fa-plus"></i></p>
+
+            
+            </div>
+        </div>
+        </div> -->
+    </div>
+
+    <div id = "rightcontainer">
+        
+    </div>
+
+    </div>
+
+    
+    </body>
+
+    <script>
+
+        var cartData = JSON.parse(localStorage.getItem('cartArr'));
+        var productdetails = document.querySelector('#productdetails')
+        console.log(cartData)
+        // var totalitems = cartData.length;
+        displayCart(cartData)
+        function displayCart(cartData){
+        // document.querySelector('#leftcontainer').innerHTML = '';
+        cartData.forEach((cartitem, cartindex) => {
+         var div = document.createElement('div')
+        //  div.setAttribute('id', 'productdetails');
+                var content = 
+                `
+                <div id = "imganddetails">
+             <div id = "pimg">
+                <img  id ="pimage" src = ${cartitem.url}>
+        
+            </div>
+
+            <div id = "pdetails">
+            <p id = "pname">${cartitem.name}</p>
+            <p id = "size">${cartitem.size}</p>
+            <p id = "pcolor">${cartitem.color}</p>
+            </div>
+            </div>
+
+        <div id = "bottompart">
+            <div id = "price">
+               $ ${cartitem.prize}
+            </div>
+
+            <div id = "emptydiv"></div>
+        
+            <div id = "quantitymain">
+                Save For Later
+            
+                <p style = "margin-top: 0%;"><i class="fa-solid fa-trash-can"></i></p>
+                <p style = "margin-top: 0%;"><i class="fa-solid fa-minus"></i></p>
+               
+                <p style = "margin-top: 0%;" id = "quantity">${cartitem.quantity}</p>
+
+                <p style = "margin-top: 0%;"><i class="fa-solid fa-plus"></i></p>
+
+            
+            </div>
+        </div>
+            `
+            div.innerHTML = content
+            // document.querySelector('#leftcontainer').append(div)
+            productdetails.append(div)
+        });
+        }
+
+
+    </script>
+</html>
