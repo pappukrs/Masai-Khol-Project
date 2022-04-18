@@ -122,7 +122,8 @@ function changeTothisImage(img){
         size:document.querySelector('#select').value,
         color:document.querySelector('#colorDECIDER').innerText,
         quantity:document.querySelector("#quantityDisplay").innerText,
-        prize:"$6.99",
+        prize:"6.99",
+        quantity: quantityCount
         
     }
     console.log(obj);
